@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Poem;
+  src: url(fonts/ofont.ru_Rosarium.ttf);
+}
+
+@font-face {
+  font-family: LanaDelRey;
+  src: url(fonts/GarelinaMedium-MVeBw.ttf);
+}
+
+@font-face {
+  font-family: MOT;
+  src: url(fonts/XtreemMedium_PERSONAL_USE.ttf);
+}
+
+@font-face {
+  font-family: Adele;
+  src: url(fonts/REBELTON-Light.ttf);
+}
+
+@font-face {
+  font-family: Oxxxymiron;
+  src: url(fonts/ENDLESSBUMMER-Regular.otf);
+}
+
+body {
+  padding: 80px;
+  background-color: rgb(214, 233, 252);
+  color: rgb(2, 2, 42);
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/* TYPOGRAPHY SET-UP */
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#title {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid rgb(2, 2, 42);
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+pre {
+  font-family: Poem;
+  font-size: 20px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+li > p {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.design_link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 600px;
+}
+
+.country {
+  margin-bottom: 20px;
+}
+
+/* FOOD SECTION */
+
+.food > * {
+  margin-bottom: 20px;
+  color: rgb(196, 196, 240);
+}
+
+.food > h6 {
+  margin-bottom: 0;
+}
+
+.food {
+  padding: 30px;
+  background-color: rgb(8, 8, 56);
+  box-shadow: 5px 5px 8px #00000014;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+img {
+  box-shadow: 5px 5px 8px #00000014;
+}
+
+/* ARTISTS SECTION */
+
+.artist {
+  width: 300px;
+  height: 160px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#Lana_text {
+  font-family: LanaDelRey;
+  color: rgb(248, 225, 189);
+  margin: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-shadow: 10px #000;
+}
+
+#MOT_text {
+  font-family: MOT;
+  color: rgb(163, 22, 9);
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Adele_text {
+  font-family: Adele;
+  color: white;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Oxxxymiron_text {
+  font-family: Oxxxymiron;
+  color: rgb(212, 212, 212);
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Iniko_text {
+  font-family: "Josefin Sans";
+  color: rgb(255, 255, 255);
+  margin: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* BUTTON SECTION */
+
+.button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(8, 8, 56);
+  color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.button > p {
+  margin-bottom: 0;
+}
+
+.button:hover,
+.button:active {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgb(214, 233, 252);
+  border: solid 1.5px rgb(8, 8, 56);
+  color: rgb(8, 8, 56);
+}
+
+.button:active {
+  background-color: rgb(183, 208, 233);
+}
