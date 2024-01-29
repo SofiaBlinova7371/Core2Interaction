@@ -1,0 +1,74 @@
+html {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+
+a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url("images/computer.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  color: #eaeaea;
+}
+
+.content {
+  position: absolute;
+  right: 8%;
+  bottom: 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.text {
+  text-align: right;
+  width: 320px;
+}
+
+button {
+  width: 60px;
+  height: 25px;
+  background-color: #c0c0c0;
+  border: solid 1px #444444;
+}
+
+button:hover {
+  background-color: #a8a8a8;
+  border: solid 1px #282828;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #909090;
+  border: solid 1px #282828;
+  cursor: pointer;
+}
+
+.image {
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  width: 400px;
+  height: auto;
+}
+
+img:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+img:active {
+  transform: scale(1);
+}
