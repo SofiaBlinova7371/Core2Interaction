@@ -63,7 +63,7 @@ span {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  top: 35vh;
+  top: 25vh;
 
   display: flex;
   justify-content: center;
@@ -93,8 +93,8 @@ span {
 
   position: fixed;
   bottom: 5rem;
-  right: 50%;
-  transform: translate(50%, -50%);
+  left: 50%;
+  transform: translate(-50%, 50%);
 
   transition: 0.5s;
   opacity: 0;
