@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: Kabel;
-  src: url("Shadows/fonts/KabelLTStd-Light.otf");
+  src: url("/Shadows/fonts/KabelLTStd-Light.otf");
 }
 
 @font-face {
   font-family: Kabel_regular;
-  src: url("Shadows/fonts/KabelLTStd-Book.otf");
+  src: url("/Shadows/fonts/KabelLTStd-Book.otf");
 }
 
 html {
