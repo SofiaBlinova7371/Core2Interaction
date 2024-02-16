@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Kabel;
+  src: url("/Core2Interaction/Shadows/fonts/KabelLTStd-Light.otf");
+}
+
+html {
+  font-family: Kabel;
+  font-size: 62.5%;
+  color: white;
+  background-color: #460a0a;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2.4em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.color {
+  color: #460a0a;
+}
+
+.text_container {
+  display: flex;
+  gap: 5vw;
+  width: 75vw;
+  margin: 35vh auto;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 30%;
+}
+
+.arrow {
+  width: auto;
+  height: auto;
+
+  position: fixed;
+  bottom: 5rem;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 10vh;
+  z-index: -1;
+}
+
+.line {
+  width: 120vw;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 5vh;
+  left: 50%;
+  z-index: -1;
+}
+
+#draggable {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 20%;
+}

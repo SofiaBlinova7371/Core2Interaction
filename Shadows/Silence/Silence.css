@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Kabel;
+  src: url("/Core2Interaction/Shadows/fonts/KabelLTStd-Light.otf");
+}
+
+@font-face {
+  font-family: Kabel_regular;
+  src: url("/Core2Interaction/Shadows/fonts/KabelLTStd-Book.otf");
+}
+
+html {
+  font-family: Kabel;
+  font-size: 62.5%;
+  color: white;
+  background-color: #000000;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2.4em;
+  text-align: justify;
+}
+
+span {
+  font-family: Kabel_regular;
+  text-transform: uppercase;
+
+  z-index: 10;
+}
+
+.slider-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  top: 20%;
+  left: 50%;
+
+  background-color: #000000;
+  border-bottom: 1.5px solid white;
+
+  z-index: 1;
+}
+
+.icon {
+  width: 5em;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 25vh;
+
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  height: fit-content;
+}
+
+.upper {
+  z-index: 2;
+}
+
+.small_text {
+  width: 20vw;
+}
+
+.big_text {
+  width: 25vw;
+}
+
+.line {
+  width: 1.5px;
+  background-color: white;
+  height: fill;
+  z-index: 4;
+}
+
+.black {
+  color: black;
+}
+
+.arrow {
+  width: auto;
+  height: auto;
+
+  position: fixed;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(10px);
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Kabel;
+  src: url("/Core2Interaction/Shadows/fonts/KabelLTStd-Light.otf");
+}
+
+@font-face {
+  font-family: Kabel_regular;
+  src: url("/Core2Interaction/Shadows/fonts/KabelLTStd-Book.otf");
+}
+
+html {
+  font-family: Kabel;
+  font-size: 62.5%;
+  color: #eecda6;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+p {
+  font-family: Kabel;
+  font-size: 2.4vw;
+  text-transform: uppercase;
+  text-align: justify;
+  line-height: 1.36;
+}
+
+.container {
+  width: 80vw;
+  height: 42vw;
+  position: relative;
+}
+
+.circles {
+  width: 80vw;
+  height: 42vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+}
+
+@keyframes shiftGradient {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.inner-circle-1 {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #eecda6,
+    rgba(0, 0, 0, 0)
+  );
+  animation: shiftGradient 0.5s infinite linear;
+}
+
+.inner-circle-2 {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #eecda6,
+    rgba(0, 0, 0, 0)
+  );
+  animation: shiftGradient 0.5s infinite linear;
+  animation-delay: 0.1s;
+}
+
+.inner-circle-3 {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #eecda6,
+    rgba(0, 0, 0, 0)
+  );
+  animation: shiftGradient 0.5s infinite linear;
+  animation-delay: 0.2s;
+}
+
+.inner-circle-4 {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #eecda6,
+    rgba(0, 0, 0, 0)
+  );
+  animation: shiftGradient 0.5s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.inner-circle-5 {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #eecda6,
+    rgba(0, 0, 0, 0)
+  );
+  animation: shiftGradient 0.5s infinite linear;
+  animation-delay: 0.4s;
+}
+
+.arrow {
+  width: auto;
+  height: auto;
+
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(10px);
+}
