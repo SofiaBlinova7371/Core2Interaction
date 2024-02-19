@@ -11,13 +11,13 @@
 html {
   font-family: Kabel;
   font-size: 62.5%;
-  color: white;
+  color: rgb(151, 149, 182);
 }
 
 body {
   width: 100vw;
   position: relative;
-  background-color: #460a0a;
+  background-color: #03001b;
 }
 
 p,
@@ -39,8 +39,8 @@ span {
   -webkit-mask-image: linear-gradient(
     180deg,
     transparent 5%,
-    #460a0a 20%,
-    #460a0a 80%,
+    #03001b 20%,
+    #03001b 80%,
     transparent 95%
   );
 }
@@ -52,7 +52,7 @@ span {
 }
 
 .second_text {
-  background-color: #460a0a;
+  background-color: #03001b;
   padding: 2em;
   width: 40em;
   height: 18em;
@@ -65,14 +65,14 @@ span {
   -webkit-mask-image: linear-gradient(
     180deg,
     transparent 5%,
-    #460a0a 20%,
-    #460a0a 80%,
+    #03001b 20%,
+    #03001b 80%,
     transparent 95%
   );
 }
 
 .third_text {
-  background: linear-gradient(to bottom, #390303, #460a0a, #390303);
+  background: linear-gradient(to bottom, #0a052b, #03001b, #0a052b);
   padding: 2em;
   height: 12em;
   overflow-x: scroll;
@@ -97,8 +97,8 @@ span {
 }
 
 .bigger_text > p {
-  font-size: 3.6em;
-  color: #773a3a;
+  font-size: 3.2em;
+  color: rgb(33, 30, 62);
   margin-bottom: 7em;
 }
 

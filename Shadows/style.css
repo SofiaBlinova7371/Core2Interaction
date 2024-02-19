@@ -16,15 +16,15 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: black;
-  color: white;
+  background-color: #03001b;
+  color: rgb(151, 149, 182);
   overflow: hidden;
 }
 
 a,
 a:visited {
   text-decoration: none;
-  color: white;
+  color: rgb(151, 149, 182);
   font-family: Kabel;
   font-size: 4vw;
   font-weight: 100;
@@ -53,7 +53,7 @@ h1 {
   font-size: 4vw;
   font-weight: 100;
   text-transform: uppercase;
-  color: #7b0f0f;
+  color: rgb(32, 30, 58);
   margin-top: -1vh;
 }
 
@@ -118,10 +118,10 @@ h1 {
 .button {
   width: 2.5vw;
   height: 2.5vw;
-  background-color: white;
+  background-color: rgb(151, 149, 182);
   border-radius: 100%;
   border: none;
-  outline: solid 1px white;
+  outline: solid 1px rgb(151, 149, 182);
   /* outline-offset: 8px; */
 
   animation: 1.5s infinite alternate bounce linear;

@@ -16,19 +16,19 @@
 html {
   font-family: Kabel;
   font-size: 62.5%;
-  color: white;
+  color: rgb(151, 149, 182);
 }
 
 body {
   width: 100vw;
   position: relative;
-  background-color: #460a0a;
+  background-color: #03001b;
   scroll-behavior: smooth;
 }
 
 p {
   font-weight: 400;
-  font-size: 2.2em;
+  font-size: 2em;
   text-align: justify;
   margin-top: 2em;
   margin-bottom: 7em;
@@ -36,38 +36,38 @@ p {
 
 .first_text {
   width: 48em;
-  height: 28em;
+  height: 25em;
   overflow: scroll;
 
   position: absolute;
   left: 53em;
-  top: 3em;
+  top: 2em;
 
   -webkit-mask-image: linear-gradient(
     180deg,
     transparent 5%,
-    #460a0a 20%,
-    #460a0a 80%,
+    #03001b 20%,
+    #03001b 80%,
     transparent 95%
   );
 }
 
 .second_text {
   padding: 2em;
-  background-color: #460a0a;
+  background-color: #03001b;
   width: 40em;
   height: 20em;
   overflow: scroll;
 
   position: absolute;
   left: 16em;
-  top: 16em;
+  top: 13em;
 
   -webkit-mask-image: linear-gradient(
     180deg,
     transparent 5%,
-    #460a0a 20%,
-    #460a0a 80%,
+    #03001b 20%,
+    #03001b 80%,
     transparent 95%
   );
 }
@@ -80,7 +80,7 @@ p {
 .third_text,
 .fourth_text {
   padding: 2em;
-  background-color: #460a0a;
+  background-color: #03001b;
   width: 23em;
   height: 23em;
   overflow: scroll;
@@ -88,8 +88,8 @@ p {
   -webkit-mask-image: linear-gradient(
     180deg,
     transparent 5%,
-    #460a0a 20%,
-    #460a0a 80%,
+    #03001b 20%,
+    #03001b 80%,
     transparent 95%
   );
 }
@@ -97,13 +97,13 @@ p {
 .third_text {
   position: absolute;
   left: 40em;
-  top: 30em;
+  top: 25em;
 }
 
 .fourth_text {
   position: absolute;
   left: 65em;
-  top: 30em;
+  top: 25em;
 }
 
 .arrow {
@@ -116,4 +116,65 @@ p {
   transition: 0.5s;
   opacity: 0;
   filter: blur(10px);
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.window {
+  width: 110vw;
+  height: 110vh;
+  top: -5vh;
+  left: -5vw;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.5;
+  filter: blur(5px);
+}
+
+#lefttop {
+  height: 45%;
+  width: 15%;
+  background-color: rgb(40, 37, 69);
+
+  position: absolute;
+  top: 0%;
+  left: 65%;
+}
+
+#righttop {
+  height: 45%;
+  width: 15%;
+  background-color: rgb(40, 37, 69);
+
+  position: absolute;
+  top: 0%;
+  left: 85%;
+}
+
+#leftbottom {
+  height: 35%;
+  width: 15%;
+  background-color: rgb(40, 37, 69);
+
+  position: absolute;
+  top: 50%;
+  left: 65%;
+}
+
+#rightbottom {
+  height: 35%;
+  width: 15%;
+  background-color: rgb(40, 37, 69);
+
+  position: absolute;
+  top: 50%;
+  left: 85%;
 }

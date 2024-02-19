@@ -11,7 +11,7 @@
 html {
   font-family: Kabel;
   font-size: 62.5%;
-  color: white;
+  color: rgb(151, 149, 182);
 }
 
 body {
@@ -22,13 +22,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #460a0a;
+  background-color: #03001b;
   padding-top: 5vh;
 }
 
 p {
   font-weight: 400;
-  font-size: 2.4em;
+  font-size: 2em;
   text-align: justify;
   width: 24em;
   text-align: center;
@@ -36,7 +36,7 @@ p {
 
 h2 {
   font-family: Kabel;
-  font-size: 4em;
+  font-size: 3.6em;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -45,7 +45,13 @@ h2 {
   height: 15vw;
   overflow: scroll;
   width: 100vw;
-  background: linear-gradient(to bottom, #390303, #460a0a, #390303);
+  background: linear-gradient(
+    to bottom,
+    #070328,
+    #050120 25%,
+    #050120 75%,
+    #070328
+  );
 }
 
 .scroll {
@@ -65,7 +71,7 @@ h2 {
 .arrow {
   width: auto;
   height: auto;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 
   transition: 0.5s;
   opacity: 0;

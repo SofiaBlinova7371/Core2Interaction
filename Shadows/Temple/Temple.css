@@ -11,8 +11,8 @@
 html {
   font-family: Kabel;
   font-size: 62.5%;
-  color: white;
-  background-color: #460a0a;
+  color: rgb(151, 149, 182);
+  background-color: #03001b;
 }
 
 body {
@@ -23,20 +23,20 @@ body {
 
 p {
   font-weight: 400;
-  font-size: 2.4em;
+  font-size: 2em;
   text-align: justify;
   margin-bottom: 1em;
 }
 
 .color {
-  color: #460a0a;
+  color: #03001b;
 }
 
 .text_container {
   display: flex;
   gap: 5vw;
   width: 75vw;
-  margin: 35vh auto;
+  margin: 30vh auto;
 }
 
 .left {
@@ -52,7 +52,7 @@ p {
   height: auto;
 
   position: fixed;
-  bottom: 5rem;
+  bottom: 3em;
   right: 50%;
   transform: translate(50%, -50%);
 
@@ -67,14 +67,14 @@ p {
   position: fixed;
   transform: translateX(-50%);
   left: 50%;
-  top: 10vh;
+  top: 5vh;
   z-index: -1;
 }
 
 .line {
   width: 120vw;
   height: 1px;
-  background-color: white;
+  background-color: rgb(151, 149, 182);
   position: absolute;
   transform: translateX(-50%);
   top: 5vh;

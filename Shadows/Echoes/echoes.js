@@ -4,7 +4,7 @@ const arrows = document.querySelectorAll(".arrow");
 
 button.addEventListener("mouseover", () => {
   appearElements.forEach((element) => {
-    element.style.color = "white";
+    element.style.color = "rgb(151, 149, 182)";
   });
   arrows.forEach((arrow) => {
     arrow.style.opacity = 1;
