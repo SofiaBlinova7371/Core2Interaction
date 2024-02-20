@@ -98,11 +98,29 @@ span {
   height: auto;
 
   position: fixed;
-  bottom: 5rem;
+  bottom: 4em;
   left: 50%;
   transform: translate(-50%, 50%);
 
   transition: 0.5s;
   opacity: 0;
   filter: blur(10px);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    pointer-events: none;
+  }
+
+  .small_text,
+  .big_text {
+    width: 70vw;
+  }
+
+  .slider,
+  .slider-container {
+    width: 100vw;
+    height: 300vh;
+  }
 }

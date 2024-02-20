@@ -111,7 +111,7 @@ p {
   height: auto;
   transform: translate(-50%, 50%);
   position: fixed;
-  bottom: 6em;
+  bottom: 4em;
   left: 50%;
   transition: 0.5s;
   opacity: 0;
@@ -177,4 +177,78 @@ p {
   position: absolute;
   top: 50%;
   left: 85%;
+}
+
+/* RESPONSIVE ADAPTATION */
+
+@media only screen and (max-width: 850px) {
+  .first_text {
+    width: 38em;
+    height: 30em;
+
+    left: 40%;
+    top: 10em;
+  }
+
+  .second_text {
+    width: 30em;
+    height: 25em;
+
+    left: 7%;
+    top: 20em;
+  }
+
+  .third_text {
+    width: 20em;
+    height: 25em;
+
+    left: 20%;
+    top: 38em;
+  }
+
+  .fourth_text {
+    width: 20em;
+    height: 25em;
+
+    left: 50%;
+    top: 38em;
+  }
+
+  .arrow {
+    bottom: 10vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .first_text {
+    width: 65%;
+    height: 30em;
+
+    left: 25%;
+    top: 4em;
+  }
+
+  .second_text {
+    width: 55%;
+    height: 23em;
+
+    left: 2%;
+    top: 18em;
+  }
+
+  .third_text {
+    width: 35%;
+    height: 20em;
+
+    left: 10%;
+    top: 35em;
+  }
+
+  .fourth_text {
+    width: 35%;
+    height: 20em;
+
+    left: 50%;
+    top: 35em;
+  }
 }

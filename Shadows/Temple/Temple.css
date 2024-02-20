@@ -63,7 +63,7 @@ p {
 
 .slider {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: fixed;
   transform: translateX(-50%);
   left: 50%;
@@ -86,4 +86,26 @@ p {
   position: absolute;
   transform: translateX(-50%);
   left: 20%;
+}
+
+/* RESPONSIVE ADAPTATION */
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  .text_container {
+    flex-direction: column;
+    pointer-events: none;
+  }
+
+  .slider {
+    position: absolute;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }

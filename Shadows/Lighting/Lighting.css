@@ -158,3 +158,51 @@ p {
   opacity: 0;
   filter: blur(10px);
 }
+
+/* RESPONSIVE ADAPTATION */
+
+@media only screen and (max-width: 850px) {
+  p {
+    font-size: 3.2vw;
+  }
+
+  .container {
+    width: 80vw;
+    height: 78vw;
+  }
+
+  .circles {
+    width: 80vw;
+    height: 78vw;
+
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+  }
+
+  .arrow {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 4.2vw;
+  }
+
+  .container {
+    width: 90vw;
+    height: 115vw;
+  }
+
+  .circles {
+    width: 90vw;
+    height: 115vw;
+
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+
+  .arrow {
+    margin-top: 10vh;
+  }
+}

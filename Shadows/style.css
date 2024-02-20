@@ -130,3 +130,74 @@ h1 {
   right: 7%;
   bottom: 7%;
 }
+
+@media only screen and (max-width: 850px) {
+  h2 {
+    font-size: 3.2vw;
+  }
+
+  h1 {
+    font-size: 6vw;
+    margin-top: -0.5vw;
+  }
+
+  #Dark {
+    bottom: 15%;
+  }
+
+  #Japan {
+    top: 20%;
+  }
+
+  a {
+    font-size: 5vw;
+  }
+  .button {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  h2 {
+    font-size: 4.8vw;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  a {
+    font-size: 6.4vw;
+  }
+
+  #Japan {
+    top: 20%;
+    left: 30%;
+  }
+
+  #Temple {
+    top: 30%;
+    left: 55%;
+  }
+
+  #Silence {
+    top: 70%;
+    left: 10%;
+  }
+
+  #Simplicity {
+    top: 45%;
+    left: 5%;
+  }
+
+  #Dark {
+    bottom: 10%;
+    left: 30%;
+  }
+
+  #Echoes {
+    top: 60%;
+    left: 55%;
+  }
+}

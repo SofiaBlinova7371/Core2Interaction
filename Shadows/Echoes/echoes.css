@@ -134,7 +134,7 @@ button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 7em;
+  bottom: 4em;
   width: 25%;
 
   display: flex;
@@ -149,4 +149,61 @@ button {
   opacity: 0;
   filter: blur(10px);
   transition: 0.5s ease;
+}
+
+/* RESPONSIVE ADAPTATION */
+
+@media only screen and (max-width: 850px) {
+  .third_text {
+    top: 50em;
+  }
+
+  .third_text > p {
+    width: 250%;
+  }
+
+  .bigger_text {
+    top: 50em;
+  }
+
+  .arrows {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .first_text {
+    width: 70%;
+    height: 20em;
+
+    left: 10%;
+    top: 5em;
+  }
+
+  .second_text {
+    width: 65%;
+    height: 25em;
+
+    left: 20%;
+    top: 13em;
+  }
+
+  .third_text > p {
+    width: 500%;
+  }
+
+  .bigger_text {
+    top: 30em;
+  }
+
+  .bigger_text > p {
+    font-size: 2.8em;
+  }
+
+  .arrows {
+    gap: 5vw;
+  }
+  .arrow {
+    width: 50vw;
+  }
 }
