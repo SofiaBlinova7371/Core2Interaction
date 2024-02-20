@@ -105,31 +105,51 @@ h1 {
 
 /* BUTTON */
 
-@keyframes bounce {
+@keyframes enlarge {
   0% {
-    outline-offset: 5px;
+    transform: scale(1.1);
+    opacity: 0.2;
   }
 
   100% {
-    outline-offset: 8px;
+    transform: scale(1.35);
+    opacity: 1;
   }
 }
 
-.button {
+.button_container {
+  position: absolute;
+  right: 10vw;
+  bottom: 7vw;
+
+  background-color: aqua;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+.outline {
   width: 2.5vw;
   height: 2.5vw;
-  background-color: rgb(151, 149, 182);
   border-radius: 100%;
   border: none;
-  outline: solid 1px rgb(151, 149, 182);
-  /* outline-offset: 8px; */
-
-  animation: 1.5s infinite alternate bounce linear;
-
   position: absolute;
-  right: 7%;
-  bottom: 7%;
+  top: 0;
+  left: 0;
 }
+
+.button {
+  background-color: rgb(151, 149, 182);
+}
+
+.outline {
+  outline: solid 1px rgb(151, 149, 182);
+  animation: 1.8s infinite alternate enlarge linear;
+}
+
+/* MOBILE ADAPTATION */
 
 @media only screen and (max-width: 850px) {
   h2 {

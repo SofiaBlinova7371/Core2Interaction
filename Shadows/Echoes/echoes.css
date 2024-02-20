@@ -109,25 +109,48 @@ span {
 
 /* BUTTONs */
 
-button {
-  background-color: transparent;
+@keyframes enlarge {
+  0% {
+    transform: scale(1.1);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
+.button_container {
+  position: absolute;
+  right: 0;
+  bottom: 10vw;
+
+  background-color: aqua;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+.outline {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100%;
   border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .button {
-  width: 2.5vw;
-  height: 2.5vw;
-  background-color: white;
-  border-radius: 100%;
-  border: none;
-  outline: solid 1px white;
-  outline-offset: 8px;
+  background-color: rgb(151, 149, 182);
+}
 
-  position: absolute;
-  right: 0;
-  bottom: 13em;
-
-  z-index: 11;
+.outline {
+  outline: solid 1px rgb(151, 149, 182);
+  animation: 1.8s infinite alternate enlarge linear;
 }
 
 .arrows {

@@ -70,7 +70,10 @@ h2 {
 .arrow {
   width: auto;
   height: auto;
-  margin-bottom: 4em;
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  transform: translate(-50%, 50%);
 
   transition: 0.5s;
   opacity: 0;
