@@ -192,6 +192,19 @@ span {
   .arrows {
     width: 50%;
   }
+
+  .arrow {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  .button_container {
+    display: none;
+  }
+
+  .words {
+    color: rgb(151, 149, 182);
+  }
 }
 
 @media only screen and (max-width: 600px) {

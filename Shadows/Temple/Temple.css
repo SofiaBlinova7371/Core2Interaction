@@ -89,6 +89,13 @@ p {
 }
 
 /* RESPONSIVE ADAPTATION */
+@media only screen and (max-width: 850px) {
+  .arrow {
+    opacity: 1;
+    filter: blur(0);
+    bottom: 3em;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   body {

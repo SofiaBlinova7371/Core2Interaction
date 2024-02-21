@@ -157,6 +157,8 @@ p {
   transition: 0.5s;
   opacity: 0;
   filter: blur(10px);
+
+  z-index: 10;
 }
 
 /* RESPONSIVE ADAPTATION */
@@ -181,6 +183,8 @@ p {
 
   .arrow {
     margin-top: 10vh;
+    opacity: 1;
+    filter: blur(0);
   }
 }
 

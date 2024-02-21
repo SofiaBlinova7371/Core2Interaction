@@ -116,6 +116,8 @@ p {
   transition: 0.5s;
   opacity: 0;
   filter: blur(10px);
+
+  z-index: 10;
 }
 
 .background {
@@ -215,7 +217,9 @@ p {
   }
 
   .arrow {
-    bottom: 10vh;
+    bottom: 6vh;
+    opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -225,7 +229,7 @@ p {
     height: 30em;
 
     left: 25%;
-    top: 4em;
+    top: 2em;
   }
 
   .second_text {
@@ -233,7 +237,7 @@ p {
     height: 23em;
 
     left: 2%;
-    top: 18em;
+    top: 13em;
   }
 
   .third_text {
@@ -241,7 +245,7 @@ p {
     height: 20em;
 
     left: 10%;
-    top: 35em;
+    top: 30em;
   }
 
   .fourth_text {
@@ -249,6 +253,6 @@ p {
     height: 20em;
 
     left: 50%;
-    top: 35em;
+    top: 30em;
   }
 }

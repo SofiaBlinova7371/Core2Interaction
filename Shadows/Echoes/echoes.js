@@ -6,29 +6,40 @@ button.addEventListener("mouseover", () => {
   appearElements.forEach((element) => {
     element.style.color = "rgb(151, 149, 182)";
   });
-  arrows.forEach((arrow) => {
-    arrow.style.opacity = 1;
-    arrow.style.filter = "blur(0)";
-  });
+
+  const isDesktop = window.matchMedia("(min-width: 850px)").matches;
+  if (isDesktop) {
+    arrows.forEach((arrow) => {
+      arrow.style.opacity = 1;
+      arrow.style.filter = "blur(0)";
+    });
+  }
 });
 
 button.addEventListener("mouseout", () => {
   appearElements.forEach((element) => {
     element.style.color = "";
   });
-  arrows.forEach((arrow) => {
-    arrow.style.opacity = 0;
-    arrow.style.filter = "blur(10px)";
-  });
+
+  const isDesktop = window.matchMedia("(min-width: 850px)").matches;
+  if (isDesktop) {
+    arrows.forEach((arrow) => {
+      arrow.style.opacity = 0;
+      arrow.style.filter = "blur(10px)";
+    });
+  }
 });
 
-arrows.forEach((arrow) => {
-  arrow.addEventListener("mouseover", () => {
-    arrow.style.opacity = 1;
-    arrow.style.filter = "blur(0)";
+if (window.matchMedia("(min-width: 850px)").matches) {
+  arrows.forEach((arrow) => {
+    arrow.addEventListener("mouseover", () => {
+      arrow.style.opacity = 1;
+      arrow.style.filter = "blur(0)";
+    });
+
+    arrow.addEventListener("mouseout", () => {
+      arrow.style.opacity = 0;
+      arrow.style.filter = "blur(10px)";
+    });
   });
-  arrow.addEventListener("mouseout", () => {
-    arrow.style.opacity = 0;
-    arrow.style.filter = "blur(10px)";
-  });
-});
+}

@@ -78,6 +78,7 @@ h2 {
   transition: 0.5s;
   opacity: 0;
   filter: blur(10px);
+  z-index: 10;
 }
 
 /* RESPONSIVE ADAPTATION */
@@ -92,6 +93,14 @@ h2 {
   .container,
   .item {
     height: 20vh;
+  }
+
+  .arrow {
+    opacity: 1;
+    filter: blur(0);
+    position: inherit;
+    transform: translate(0, 0);
+    margin-bottom: 5em;
   }
 }
 

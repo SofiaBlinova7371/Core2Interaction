@@ -122,8 +122,6 @@ h1 {
   right: 10vw;
   bottom: 7vw;
 
-  background-color: aqua;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,6 +173,15 @@ h1 {
   .button {
     width: 5vw;
     height: 5vw;
+  }
+
+  .button_container {
+    display: none;
+  }
+
+  .link {
+    opacity: 1;
+    filter: blur(0);
   }
 }
 
