@@ -1,0 +1,218 @@
+[
+  {
+    "": 1,
+    "Image": "1.jpeg",
+    "Location": "3rd Ave, 13th St",
+    "Time": "16:43",
+    "Finish": "Golden",
+    "Personal rating": "1/5",
+    "Feeling": "Default"
+  },
+  {
+    "": 2,
+    "Image": "2.jpeg",
+    "Location": "2nd Ave, 13th St",
+    "Time": "16:44",
+    "Finish": "Golden & metalic",
+    "Personal rating": "5/5",
+    "Feeling": "Minimalist"
+  },
+  {
+    "": 3,
+    "Image": "3.jpeg",
+    "Location": "3rd Ave, 39th St",
+    "Time": "14:21",
+    "Finish": "Paint & golden",
+    "Personal rating": "5/5",
+    "Feeling": "Playful"
+  },
+  {
+    "": 4,
+    "Image": "4.jpeg",
+    "Location": "1st Ave, 78th St",
+    "Time": "17:46",
+    "Finish": "Metalic",
+    "Personal rating": "2/5",
+    "Feeling": "Default"
+  },
+  {
+    "": 5,
+    "Image": "5.jpeg",
+    "Location": "York Ave, 78th St",
+    "Time": "17:48",
+    "Finish": "Metalic",
+    "Personal rating": "1/5",
+    "Feeling": "Safe"
+  },
+  {
+    "": 6,
+    "Image": "6.jpeg",
+    "Location": "York Ave, 77th St",
+    "Time": "19:11",
+    "Finish": "Golden",
+    "Personal rating": "3/5",
+    "Feeling": "Exotic"
+  },
+  {
+    "": 7,
+    "Image": "7.jpeg",
+    "Location": "1st Ave, 82th St",
+    "Time": "17:54",
+    "Finish": "Silver & metalic",
+    "Personal rating": "3/5",
+    "Feeling": "Upscale"
+  },
+  {
+    "": 8,
+    "Image": "8.jpeg",
+    "Location": "2nd Ave, 77th St",
+    "Time": "19:05",
+    "Finish": "Metalic",
+    "Personal rating": "1/5",
+    "Feeling": "Simple"
+  },
+  {
+    "": 9,
+    "Image": "9.jpeg",
+    "Location": "1st Ave, 77th St",
+    "Time": "19:10",
+    "Finish": "Bronze",
+    "Personal rating": "4/5",
+    "Feeling": "Vintage"
+  },
+  {
+    "": 10,
+    "Image": "10.jpeg",
+    "Location": "1st Ave, 82th St",
+    "Time": "17:53",
+    "Finish": "Silver",
+    "Personal rating": "5/5",
+    "Feeling": "Modern"
+  },
+  {
+    "": 11,
+    "Image": "11.jpeg",
+    "Location": "3rd Ave, 44th St",
+    "Time": "12:12",
+    "Finish": "Wooden & metalic",
+    "Personal rating": "4/5",
+    "Feeling": "Cozy"
+  },
+  {
+    "": 12,
+    "Image": "12.jpeg",
+    "Location": "1st Ave, 74th St",
+    "Time": "11:20",
+    "Finish": "Metalic & paint",
+    "Personal rating": "2/5",
+    "Feeling": "Playful"
+  },
+  {
+    "": 13,
+    "Image": "13.jpeg",
+    "Location": "1st Ave, 78th St",
+    "Time": "17:46",
+    "Finish": "Bronze",
+    "Personal rating": "2/5",
+    "Feeling": "Default"
+  },
+  {
+    "": 14,
+    "Image": "14.jpeg",
+    "Location": "Park Ave, 39th St",
+    "Time": "14:24",
+    "Finish": "Golden",
+    "Personal rating": "2/5",
+    "Feeling": "Oldschool"
+  },
+  {
+    "": 15,
+    "Image": "15.jpeg",
+    "Location": "Park Ave, 38th St",
+    "Time": "14:25",
+    "Finish": "Golden",
+    "Personal rating": "4/5",
+    "Feeling": "Exotic"
+  },
+  {
+    "": 16,
+    "Image": "16.jpeg",
+    "Location": "Park Ave, 38th St",
+    "Time": "14:25",
+    "Finish": "Bronze & paint",
+    "Personal rating": "4/5",
+    "Feeling": "Luxury"
+  },
+  {
+    "": 17,
+    "Image": "17.jpeg",
+    "Location": "5th Ave, 74th St",
+    "Time": "18:38",
+    "Finish": "Wooden & golden",
+    "Personal rating": "4/5",
+    "Feeling": "-"
+  },
+  {
+    "": 18,
+    "Image": "18.jpeg",
+    "Location": "5th Ave, 75th St",
+    "Time": "18:39",
+    "Finish": "Metalic",
+    "Personal rating": "4/5",
+    "Feeling": "Vintage"
+  },
+  {
+    "": 19,
+    "Image": "19.jpeg",
+    "Location": "1st Ave, 77th St",
+    "Time": "12:33",
+    "Finish": "Metalic",
+    "Personal rating": "1/5",
+    "Feeling": "Default"
+  },
+  {
+    "": 20,
+    "Image": "20.jpeg",
+    "Location": "3rd Ave, 60th St",
+    "Time": "17:42",
+    "Finish": "Golden & paint",
+    "Personal rating": "3/5",
+    "Feeling": "Playful"
+  },
+  {
+    "": 21,
+    "Image": "21.jpeg",
+    "Location": "2nd Ave, 44th St",
+    "Time": "18:21",
+    "Finish": "Golden",
+    "Personal rating": "4/5",
+    "Feeling": "Upscale"
+  },
+  {
+    "": 22,
+    "Image": "22.jpeg",
+    "Location": "York Ave, 84th St",
+    "Time": "13:22",
+    "Finish": "Golden & paint",
+    "Personal rating": "5/5",
+    "Feeling": "Art Deco-ish"
+  },
+  {
+    "": 23,
+    "Image": "23.jpeg",
+    "Location": "-",
+    "Time": "-",
+    "Finish": "-",
+    "Personal rating": "-",
+    "Feeling": "-"
+  },
+  {
+    "": 24,
+    "Image": "24.jpeg",
+    "Location": "-",
+    "Time": "-",
+    "Finish": "-",
+    "Personal rating": "-",
+    "Feeling": "-"
+  }
+]
