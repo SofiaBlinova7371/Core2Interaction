@@ -149,8 +149,8 @@
     "Location": "5th Ave, 74th St",
     "Time": "18:38",
     "Finish": "Wooden & golden",
-    "Personal rating": "4/5",
-    "Feeling": "-"
+    "Personal rating": "3/5",
+    "Feeling": "Default"
   },
   {
     "": 18,
@@ -200,19 +200,19 @@
   {
     "": 23,
     "Image": "23.jpeg",
-    "Location": "-",
-    "Time": "-",
-    "Finish": "-",
-    "Personal rating": "-",
-    "Feeling": "-"
+    "Location": "3rd Ave, 83rd St",
+    "Time": "13:13",
+    "Finish": "Bronze",
+    "Personal rating": "4/5",
+    "Feeling": "Vintage"
   },
   {
     "": 24,
     "Image": "24.jpeg",
-    "Location": "-",
-    "Time": "-",
-    "Finish": "-",
-    "Personal rating": "-",
-    "Feeling": "-"
+    "Location": "3rd Ave, 29th St",
+    "Time": "15:16",
+    "Finish": "Metalic & paint",
+    "Personal rating": "5/5",
+    "Feeling": "Welcoming"
   }
 ]
