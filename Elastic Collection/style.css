@@ -6,11 +6,10 @@
 html {
   font-size: 62.5%;
   background-color: rgb(225, 221, 217);
-  background-image: url(images/background/wall\ texture.png);
-  background-repeat: no-repeat;
+  background-image: url(images/background/wall\ texture.jpeg);
   background-size: 100vw;
-  color: rgb(8, 36, 88);
-  cursor: url(images/Cursor/cursor.png);
+  color: #082458;
+  cursor: url(images/Cursor/Cursor.png), auto;
 }
 
 h1 {
@@ -31,7 +30,7 @@ h2 {
   font-size: 3vw;
   text-align: end;
   font-weight: 300;
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 h3 {
@@ -51,13 +50,76 @@ p {
   text-align: center;
 }
 
+a {
+  font-family: "Italiana", serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  color: #082458;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  left: 8%;
+  top: 5vw;
+}
+
+a:hover {
+  text-decoration: underline #082458 1px;
+  cursor: url(images/Cursor/Cursor-02.png), auto;
+}
+
+.intro_text {
+  font-family: "Lato", serif;
+  text-align: end;
+  width: 45%;
+  font-size: 1.5vw;
+  color: #082458;
+  position: absolute;
+  right: 0;
+  margin-top: 8vh;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 100%;
+  height: 1.5px;
+  background-color: #082458;
+}
+
 .title {
-  width: fit-content;
+  width: 84vw;
+  height: 55vh;
+  padding-top: 5vh;
+  border-top: #082458 solid 2.5px;
   position: fixed;
   transform: translate(-50%, 0);
-  top: 10vw;
+  top: 8vw;
   left: 50%;
   z-index: -1;
+}
+
+/* First ::after pseudo-element */
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 75%;
+  height: 2px;
+  background-color: #082458;
+}
+
+.knob {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+}
+
+.knob:hover {
+  cursor: url(images/Cursor/Cursor-02.png), auto;
 }
 
 .row {
@@ -67,25 +129,26 @@ p {
 }
 
 .container {
-  margin-top: 70vh;
+  margin-top: 100vh;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   box-shadow: 0 -5px 10px #4949491e;
-  cursor: pointer;
 }
 
 .image_container {
   position: relative;
   transition: flex-grow 0.4s, background-size 0.4s;
-  /* background-color: rgb(193, 193, 193);
-  border: solid 1px black; */
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.image_container:active {
+  cursor: url(images/Cursor/Cursor-02.png), auto;
 }
 
 .image {
@@ -183,9 +246,9 @@ p {
 
 @media (max-width: 800px) {
   html {
-    background-image: url(images/background/wall\ texture\ -\ mobile.png);
-    background-repeat: repeat;
-    background-size: auto;
+    background-image: url(images/background/wall\ texture\ -\ mobile.jpeg);
+    background-repeat: repeat-y;
+    background-size: 100vw;
   }
 
   .mobile_view {
@@ -201,7 +264,7 @@ p {
   }
 
   .container {
-    margin-top: 60vh;
+    margin-top: 70vh;
     margin-bottom: 30vh;
     width: 100vw;
     height: 120vh;
@@ -253,6 +316,7 @@ p {
 
   .title {
     width: 90vw;
+    height: 30vh;
     position: fixed;
     transform: translate(-50%, 0);
     top: 30vw;
@@ -268,7 +332,7 @@ p {
   h2 {
     font-size: 6vw;
     margin-top: 0;
-    width: 50vw;
+    width: 60vw;
     position: inherit;
     right: 0;
   }
@@ -277,7 +341,28 @@ p {
     font-size: 10vw;
   }
 
-  p {
+  p,
+  a {
     font-size: 4.2vw;
+  }
+
+  a {
+    top: 12vh;
+    left: 5vw;
+  }
+
+  .intro_text {
+    font-size: 3vw;
+    width: 65%;
+  }
+
+  .knob {
+    width: 30%;
+    bottom: -10%;
+  }
+
+  .title::after {
+    left: 35%;
+    width: 65%;
   }
 }
