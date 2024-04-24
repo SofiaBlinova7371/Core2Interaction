@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #d3787e, #e5aa96);
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+a {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  height: 12vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+#home {
+  width: 40px;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  width: 8vw;
+}
+
+.body {
+  width: 100vw;
+  height: 73vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.center {
+  width: 45vw;
+  text-align: center;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.numbers_item {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+  padding: auto;
+  border-radius: 15px;
+  border: 1.5px solid white;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.122);
+}
