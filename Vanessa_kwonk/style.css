@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline solid 1px black;
+}
+
+.title_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.recording {
+  position: relative;
+  margin: 0 auto;
+  width: 75vw;
+  height: 85vh;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.circles {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  top: 1.5vw;
+  left: 3vw;
+}
+
+#video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 70vw;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.description {
+  width: 45vw;
+  margin: 10vh 12.5vw;
+}
+
+.responsive {
+  width: 75vw;
+  height: 83vh;
+  margin: 10vh auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iPad {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 83vh;
+  width: 35vw;
+  position: relative;
+}
+
+#iPad {
+  border-radius: 5px;
+  height: 75vh;
+  width: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 48%;
+}
+
+.iPhone {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 83vh;
+  width: 23vw;
+  position: relative;
+}
+
+#iPhone {
+  border-radius: 5px;
+  height: 75vh;
+  width: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 48%;
+}
+
+.link {
+  margin: 10vh 12.5vw;
+}
