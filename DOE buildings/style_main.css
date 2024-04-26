@@ -124,7 +124,8 @@ button {
   display: flex;
   width: 80vw;
   justify-content: space-between;
-  margin: 20vh auto;
+  margin: 0 auto;
+  margin-top: 15vh;
   z-index: 100;
 }
 
@@ -148,16 +149,17 @@ button {
 
 .graphic {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: relative;
+  overflow: hidden;
 }
 
 #background {
   width: 100vw;
-  height: auto;
+  height: fit-content;
   position: absolute;
   transform: translate(-50%, 0);
-  bottom: 0;
+  bottom: -8%;
   left: 50%;
   pointer-events: none;
 }
@@ -305,7 +307,7 @@ button {
 
 #buildingList {
   position: absolute;
-  bottom: 25%;
+  bottom: 10%;
   left: 4vw;
   width: 20vw;
   height: 55vh;
