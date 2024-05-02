@@ -9,15 +9,21 @@
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style_main.css" />
     <script src="data.js"></script>
     <title>Main</title>
   </head>
   <body>
     <div class="menu">
-      <h3 class="title">DOE Buildings Energy Expenses</h3>
+      <h1 class="title">DOE Buildings<br />Energy Expenses</h1>
       <button>
-        <a href="index.html"><img id="home" src="image/home.svg" /></a>
+        <a href="index.html"><img id="home" src="images/home.svg" /></a>
       </button>
     </div>
 
@@ -70,35 +76,41 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="area_filter">
-      <button class="area"><p class="capitalised">Manhattan</p></button>
-      <button class="area"><p class="capitalised">Brooklyn</p></button>
-      <button class="area"><p class="capitalised">Queens</p></button>
-      <button class="area"><p class="capitalised">Bronx</p></button>
+
+      <button onclick="bottomFunction()" id="scroll">
+        <img src="images/scroll.svg" />
+      </button>
+
+      <script src="scroll.js"></script>
     </div>
 
     <div class="graphic">
-      <img id="background" src="image/background_2.svg" />
+      <div class="area_filter">
+        <button class="area"><p class="capitalised">Manhattan</p></button>
+        <button class="area"><p class="capitalised">Brooklyn</p></button>
+        <button class="area"><p class="capitalised">Queens</p></button>
+        <button class="area"><p class="capitalised">Bronx</p></button>
+      </div>
+      <img id="background" src="images/background_2.svg" />
       <div class="first">
         <div id="first_rec"></div>
         <div id="first_color"></div>
-        <img id="first_building" src="image/first_2.svg" />
+        <img id="first_building" src="images/FIRST.svg" />
       </div>
       <div class="second">
         <div id="second_rec"></div>
         <div id="second_color"></div>
-        <img id="second_building" src="image/second_2.svg" />
+        <img id="second_building" src="images/SECOND.svg" />
       </div>
       <div class="third">
         <div id="third_rec"></div>
         <div id="third_color"></div>
-        <img id="third_building" src="image/third_2.svg" />
+        <img id="third_building" src="images/THIRD.svg" />
       </div>
       <div class="fourth">
         <div id="fourth_rec"></div>
         <div id="fourth_color"></div>
-        <img id="fourth_building" src="image/fourth_2.svg" />
+        <img id="fourth_building" src="images/FOURTH.svg" />
       </div>
 
       <ul id="buildingList"></ul>

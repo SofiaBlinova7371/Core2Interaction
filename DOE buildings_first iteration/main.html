@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_main.css" />
+    <script src="data.js"></script>
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="menu">
+      <h3 class="title">DOE Buildings Energy Expenses</h3>
+      <button>
+        <a href="index.html"><img id="home" src="image/home.svg" /></a>
+      </button>
+    </div>
+
+    <div class="body">
+      <p class="center">
+        This website represents a breakdown of the energy consumption for the
+        main educational buildings in New York City.<br />
+        <br />The infographic below dives into these numbers across 4
+        categories:
+      </p>
+
+      <div class="categories">
+        <div class="categories_item">
+          <div class="title">
+            <div class="color" id="KW"></div>
+            <p class="capitalised">Electricity demand (KW)</p>
+          </div>
+          <p class="description">
+            the instant electrical power needs in kilowatts, reflects current
+            demand
+          </p>
+        </div>
+        <div class="categories_item">
+          <div class="title">
+            <div class="color" id="Therms"></div>
+            <p class="capitalised">Gas (Therms)</p>
+          </div>
+          <p class="description">
+            the amount of natural gas used representing the heat content of the
+            gas consumed
+          </p>
+        </div>
+        <div class="categories_item">
+          <div class="title">
+            <div class="color" id="KWh"></div>
+            <p class="capitalised">Electricity usage (KWh)</p>
+          </div>
+          <p class="description">
+            the total electrical energy consumed over time in kilowatt-hours
+          </p>
+        </div>
+        <div class="categories_item">
+          <div class="title">
+            <div class="color" id="mmBTUs"></div>
+            <p class="capitalised">Total Usage (mmBTUs)</p>
+          </div>
+          <p class="description">
+            the total energy usage considering both electricity and gas usage
+            combined
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="area_filter">
+      <button class="area"><p class="capitalised">Manhattan</p></button>
+      <button class="area"><p class="capitalised">Brooklyn</p></button>
+      <button class="area"><p class="capitalised">Queens</p></button>
+      <button class="area"><p class="capitalised">Bronx</p></button>
+    </div>
+
+    <div class="graphic">
+      <img id="background" src="image/background_2.svg" />
+      <div class="first">
+        <div id="first_rec"></div>
+        <div id="first_color"></div>
+        <img id="first_building" src="image/first_2.svg" />
+      </div>
+      <div class="second">
+        <div id="second_rec"></div>
+        <div id="second_color"></div>
+        <img id="second_building" src="image/second_2.svg" />
+      </div>
+      <div class="third">
+        <div id="third_rec"></div>
+        <div id="third_color"></div>
+        <img id="third_building" src="image/third_2.svg" />
+      </div>
+      <div class="fourth">
+        <div id="fourth_rec"></div>
+        <div id="fourth_color"></div>
+        <img id="fourth_building" src="image/fourth_2.svg" />
+      </div>
+
+      <ul id="buildingList"></ul>
+    </div>
+
+    <div class="building_filter"></div>
+  </body>
+</html>

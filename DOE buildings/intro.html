@@ -9,14 +9,21 @@
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style_intro.css" />
     <title>Intro</title>
   </head>
   <body>
     <div class="menu">
-      <h3 class="title">DOE Buildings Energy Expenses</h3>
+      <h1 id="title">DOE Buildings<br />Energy Expenses</h1>
       <button>
-        <a href="index.html"><img id="home" src="image/home.svg" /></a>
+        <a href="index.html"><img id="home" src="images/home.svg" /></a>
       </button>
     </div>
     <div class="body">
@@ -27,19 +34,24 @@
       </p>
       <div class="numbers">
         <div class="numbers_item">
-          <h3 class="count" data-target="854">0</h3>
+          <h1 class="count" data-target="854">0</h1>
           <p>Trillion British thermal units</p>
         </div>
         <div class="numbers_item">
-          <h3 class="count" data-target="13">0%</h3>
+          <h1 class="count" data-target="13">0%</h1>
           <p>NYC energy consumption</p>
         </div>
         <div class="numbers_item">
-          <h3 class="count" data-target="11">0%</h3>
+          <h1 class="count" data-target="11">0%</h1>
           <p>Total fuel expenditures</p>
         </div>
       </div>
       <button class="button"><a href="main.html">continue</a></button>
+    </div>
+
+    <div class="illustration">
+      <img src="images/city.svg" id="city" />
+      <img src="images/taxi.svg" id="taxi" />
     </div>
     <script src="script_intro.js"></script>
   </body>
