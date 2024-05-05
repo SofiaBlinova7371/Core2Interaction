@@ -86,6 +86,18 @@ function initializeBuildingNames(data) {
     // Initialize percentage object
     const percentages = {};
 
+    // Initialize values for KW, KWH, THERMS, and TOTAL
+    let KW_value = parseFloat(document.getElementById("KW_value").textContent);
+    let KWH_value = parseFloat(
+      document.getElementById("KWH_value").textContent
+    );
+    let THERMS_value = parseFloat(
+      document.getElementById("THERMS_value").textContent
+    );
+    let TOTAL_value = parseFloat(
+      document.getElementById("TOTAL_value").textContent
+    );
+
     // Loop through each entry in the JSON data
     data["working sheet"].forEach((entry) => {
       // Check if the entry corresponds to the clicked building
@@ -98,6 +110,26 @@ function initializeBuildingNames(data) {
         const percentage = (average / maxValue) * 100;
         // Store percentage in the object
         percentages[measurement] = percentage;
+
+        // Update values for KW, KWH, THERMS, and TOTAL
+        switch (measurement) {
+          case "Electricity Demand (KW)":
+            animateValue("KW_value", KW_value, average, " KW");
+            KW_value = average.toFixed(0);
+            break;
+          case "Electricity Usage (KWH)":
+            animateValue("KWH_value", KWH_value, average, " KWH");
+            KWH_value = average.toFixed(0);
+            break;
+          case "Gas (Therms)":
+            animateValue("THERMS_value", THERMS_value, average, " Therms");
+            THERMS_value = average.toFixed(0);
+            break;
+          case "Total Usage (mmBTUs)":
+            animateValue("TOTAL_value", TOTAL_value, average, " MMBtu");
+            TOTAL_value = average.toFixed(0);
+            break;
+        }
       }
     });
 
@@ -135,5 +167,25 @@ function initializeBuildingNames(data) {
     colorElements.forEach((element) => {
       element.style.transition = "transform 1s ease"; // Adjust duration and timing function as needed
     });
+  }
+
+  // Function to animate value change
+  function animateValue(id, start, end, unit) {
+    const duration = 1000; // milliseconds
+    const steps = 60; // Number of steps for the animation
+    const range = end - start;
+    const stepValue = range / steps;
+    let current = start;
+    let stepCount = 0;
+    const obj = document.getElementById(id);
+    const timer = setInterval(function () {
+      current += stepValue;
+      obj.textContent = current.toFixed(0) + unit;
+      stepCount++;
+      if (stepCount >= steps) {
+        obj.textContent = end.toFixed(0) + unit;
+        clearInterval(timer);
+      }
+    }, duration / steps);
   }
 }
