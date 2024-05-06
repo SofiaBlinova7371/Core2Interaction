@@ -79,7 +79,6 @@ button {
 .body {
   width: 100vw;
   height: 80vh;
-  border-bottom: 1.5px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,6 +192,10 @@ button {
   bottom: 5rem;
   left: 50%;
   pointer-events: none;
+}
+
+#background_mobile {
+  display: none;
 }
 
 /* Building Graphics */
@@ -445,4 +448,135 @@ li a {
 .third:hover .tooltip,
 .fourth:hover .tooltip {
   display: block;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+
+  p {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  a,
+  .capitalised {
+    font-size: 3.6rem;
+  }
+
+  .categories_item .capitalised {
+    font-size: 2.8rem;
+  }
+
+  .body {
+    min-height: 80vh;
+    gap: 8vh;
+  }
+
+  .center {
+    width: 80vw;
+  }
+
+  .categories {
+    width: 90vw;
+    column-gap: 3vh;
+    row-gap: 3vh;
+  }
+
+  .graphic {
+    margin-top: 5vh;
+    width: 100vw;
+  }
+
+  .area_filter {
+    width: 30vw;
+    height: 20vh;
+    flex-wrap: wrap;
+  }
+
+  .area {
+    width: 100%;
+    height: 5rem;
+  }
+
+  #buildingList {
+    transform: translate(-50%, 0);
+    top: 28vh;
+    left: 50%;
+
+    width: 70vw;
+    height: 20vh;
+    padding: 1.5rem 0;
+
+    text-align: center;
+  }
+
+  li a {
+    font-size: 3.4rem;
+  }
+
+  .first_building_container {
+    bottom: 5rem;
+    left: 13%;
+    width: 22vw;
+  }
+
+  .first {
+    width: 22vw;
+    height: 56.7vw;
+  }
+
+  .second_building_container {
+    bottom: 5rem;
+    left: 34%;
+    width: 17.9vw;
+  }
+
+  .second {
+    width: 17.9vw;
+    height: 48.6vw;
+  }
+
+  .third_building_container {
+    bottom: 5rem;
+    left: 58%;
+    width: 27.4vw;
+  }
+
+  .third {
+    width: 27.4vw;
+    height: 56.4vw;
+  }
+
+  .fourth_building_container {
+    bottom: 5rem;
+    left: 86%;
+    width: 23.9vw;
+  }
+
+  .fourth {
+    width: 23.9vw;
+    height: 61.7vw;
+  }
+
+  #background {
+    display: none;
+  }
+
+  #background_mobile {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    transform: translate(-50%, 0);
+    bottom: 15rem;
+    height: fit-content;
+    left: 50%;
+    pointer-events: none;
+  }
 }

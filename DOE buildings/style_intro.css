@@ -154,3 +154,34 @@ button {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.076);
 }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+
+  .body {
+    padding-top: 15rem;
+  }
+
+  .center {
+    width: 70vw;
+  }
+
+  .numbers {
+    gap: 2rem;
+  }
+
+  .numbers_item {
+    width: 24vw;
+  }
+
+  #city {
+    width: 180%;
+    height: auto;
+  }
+
+  #taxi {
+    animation: taxi 6s infinite linear;
+  }
+}

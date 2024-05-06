@@ -71,6 +71,10 @@ a:hover {
   height: auto;
 }
 
+.background_mobile {
+  display: none;
+}
+
 .center {
   width: 40vw;
   display: flex;
@@ -98,4 +102,30 @@ a:hover {
 .button:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.076);
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+
+  .center {
+    width: 70vw;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    width: 70vw;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .background_mobile {
+    display: block;
+    width: 100vw;
+    height: auto;
+  }
 }
