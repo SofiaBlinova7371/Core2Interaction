@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/Ogg-Regular-BF646c18fc3ed57.otf");
+}
+
+@font-face {
+  font-family: "Ogg_Italic";
+  src: url(fonts/Ogg-RegularItalic-BF646c18fc4f575.ttf);
+}
+
+html {
+  font-family: "Ogg";
+  font-size: 80%;
+}
+
+h1 {
+  color: #000;
+  font-size: 4rem;
+}
+
+#timer {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+}
+
+.description {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(images/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brain {
+  width: 22vw;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.puzzleBg {
+  width: 30vw;
+  height: 30vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0;
+  margin: 15rem auto;
+}
+
+.puzzleCell {
+  width: 10vw;
+  height: 10vw;
+  border: 0.1rem solid #0000007f;
+}
+
+.draggable {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-color: rgb(49, 73, 65);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* NAVIGATION SET-UP */
+
+.navigation {
+  height: 8rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 5;
+}
+
+#back {
+  padding-left: 8rem;
+}
+
+#emotion {
+  padding-right: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.2s;
+}
+
+#emotion:active {
+  transform: scale(1.02);
+}
+
+#arrow {
+  transition: 0.1s;
+  transform: scale(0);
+}
+
+#emotion:hover #arrow {
+  transform: scale(1);
+}
+
+.icon {
+  width: 2.5rem;
+  height: auto;
+  color: rgb(0, 0, 0);
+
+  transition: 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+a {
+  font-size: 1.5rem;
+  font-family: "Ogg";
+  text-decoration: none;
+  color: #000;
+}
+
+/* POP-UP WINDOW */
+
+.pop-up {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000da;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  display: none;
+}
+
+#timeOut {
+  color: aliceblue;
+}
+
+#reload {
+  width: 15rem;
+  height: 4.5rem;
+  background-color: #00000000;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+
+#reload:hover {
+  scale: 1.05;
+}
+
+#reload:active {
+  scale: 0.95;
+}
+
+#border {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#try {
+  width: 100%;
+  position: absolute;
+  top: 32%;
+  left: 53%;
+  transform: translate(-50%, 0);
+  font-family: "Odd";
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+/* RESPONSIVE SET-UP */
+
+@media only screen and (max-width: 900px) {
+  #timer {
+    top: 15%;
+  }
+
+  .description {
+    bottom: 30%;
+    font-size: 1.5rem;
+    width: 30vw;
+  }
+
+  .brain {
+    width: 40vw;
+    height: auto;
+  }
+
+  .puzzleBg {
+    width: 48vw;
+    height: 48vw;
+    margin: 20rem auto;
+  }
+
+  .puzzleCell {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .draggable {
+    position: absolute;
+    width: 16vw;
+    height: 16vw;
+  }
+
+  #back {
+    padding-left: 6rem;
+  }
+
+  #emotion {
+    padding-right: 6rem;
+  }
+
+  #arrow {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 65%;
+  }
+
+  #timer {
+    top: 11%;
+  }
+
+  .description {
+    bottom: 32%;
+    width: 40vw;
+    font-size: 1.3rem;
+  }
+
+  .brain {
+    width: 50vw;
+    height: auto;
+  }
+
+  .puzzleBg {
+    width: 60vw;
+    height: 60vw;
+    margin: 22vh auto;
+  }
+
+  .puzzleCell {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .draggable {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  #back {
+    padding-left: 4rem;
+  }
+
+  #emotion {
+    padding-right: 4rem;
+  }
+}

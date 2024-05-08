@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Glitch;
+  src: url(fonts/CfGlitchCityRegular-L1vZ.ttf);
+}
+
+@font-face {
+  font-family: ChakraPetch_regular;
+  src: url(fonts/ChakraPetch-Regular.ttf);
+}
+
+@font-face {
+  font-family: ChakraPetch_bold;
+  src: url(fonts/ChakraPetch-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: Glitch;
+  font-size: 12rem;
+  font-weight: normal;
+  background-color: #b00606;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Glitch;
+  font-size: 8rem;
+  font-weight: normal;
+  background-color: #b00606;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+a,
+button {
+  font-family: Glitch;
+  font-weight: normal;
+  font-size: 5rem;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  background-color: #b0060600;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover,
+a:active,
+button:hover,
+button:active {
+  color: #fff;
+  cursor: pointer;
+}
+
+p {
+  font-family: ChakraPetch_regular;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+span {
+  font-family: ChakraPetch_bold;
+  font-size: 2.4rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* ALIGNMENT SET-UP */
+
+.alignment_container {
+  position: relative;
+
+  background-color: #b00606;
+  width: 100vw;
+  height: calc(100vh - 7rem);
+  overflow: hidden;
+}
+
+/* TITLE SET-UP */
+
+.title_alignment {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title_container {
+  position: relative;
+
+  width: 45vw;
+  height: 15vw;
+}
+
+.title1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title2 {
+  position: absolute;
+  top: 13%;
+  left: 6%;
+}
+
+.title3 {
+  position: absolute;
+  top: 26%;
+  left: 12%;
+}
+
+.title4 {
+  position: absolute;
+  top: 39%;
+  left: 18%;
+}
+
+/* NAVIGATION SET-UP */
+
+.navigation {
+  height: 6rem;
+  padding: 0 6rem;
+  padding-top: 1rem;
+  background-color: #b00606;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#emotion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.1s;
+}
+
+#emotion > a {
+  font-family: ChakraPetch_regular;
+  font-size: 2.2rem;
+  text-transform: none;
+  color: #fff;
+}
+
+#arrow {
+  transition: 0.1s;
+  transform: scale(0);
+
+  color: #fff;
+}
+
+#emotion:hover #arrow {
+  transform: scale(1);
+}
+
+#emotion:active {
+  transform: scale(1.02);
+}
+
+.icon {
+  width: 3rem;
+  height: auto;
+  color: #fff;
+
+  transition: 0.2s;
+}
+
+.icon:hover,
+.icon:active {
+  transform: scale(1.1);
+}
+
+/* IMAGES SET-UP */
+
+.checkboard_right {
+  position: absolute;
+
+  width: 45vw;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+
+.checkboard_left {
+  position: absolute;
+
+  width: 20vw;
+  height: auto;
+  top: 22%;
+  left: 0;
+}
+
+.person {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  height: 100%;
+  width: auto;
+}
+
+/* TEXT-BLOCK SET-UP */
+
+.text_block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 45vh;
+
+  display: flex;
+}
+
+.definition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  flex: 1;
+  display: flex;
+  gap: 0;
+}
+
+.rotated {
+  transform: rotate(-90deg);
+  width: 25vw;
+  padding-left: 4rem;
+}
+
+.rectangle {
+  width: 100%;
+  height: 3rem;
+  border: solid 2px #fff;
+  background-color: none;
+  margin-bottom: 1rem;
+}
+
+.links {
+  align-self: flex-end;
+  padding-right: 2rem;
+  flex: 4;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* RESPONSIVE SET-UP */
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  .person {
+    height: 60%;
+  }
+
+  .text_block {
+    flex-direction: column-reverse;
+    height: 75%;
+  }
+
+  .rotated {
+    width: 40vw;
+    padding-left: 15rem;
+    height: 30%;
+  }
+
+  .links {
+    width: 95%;
+    gap: 2rem;
+  }
+
+  .icon {
+    width: 4rem;
+    height: auto;
+  }
+
+  #emotion > a {
+    font-size: 2.4rem;
+  }
+
+  #arrow {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+
+  .navigation {
+    padding: 2rem 3rem;
+  }
+}

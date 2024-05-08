@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Pixeloid;
+  src: url(Fonts/PixeloidMono.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+  background-color: #aeeaea;
+  font-family: Pixeloid;
+
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+
+  background-image: url(Images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+}
+
+p,
+button {
+  font-size: 2rem;
+  font-family: Pixeloid;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* BUTTONS SET-UP */
+
+.open_button,
+.dismiss_button {
+  width: 15rem;
+  height: 4rem;
+  padding: auto;
+
+  border: solid 0.2rem black;
+  border-radius: 0.5rem;
+}
+
+.open_button {
+  background-color: #faeed9;
+}
+
+.open_button:hover {
+  box-shadow: 0.2rem 0.2rem black;
+  transform: translate(-0.2rem, -0.2rem);
+}
+
+.open_button:active {
+  background-color: #dec9a6;
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+.dismiss_button {
+  background-color: white;
+}
+
+.dismiss_button:hover {
+  box-shadow: 0.2rem 0.2rem black;
+  transform: translate(-0.2rem, -0.2rem);
+}
+
+.dismiss_button:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+/* WINDOW SET-UP */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 55rem;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50vw;
+
+  border-radius: 8px;
+  box-shadow: 1rem 0.5rem rgb(0, 0, 0);
+}
+
+.window_upper_line {
+  height: 5rem;
+  width: 100%;
+
+  background-color: #faeed9;
+  border: solid 3px black;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+
+  position: relative;
+}
+
+.window_box {
+  width: 100%;
+  height: 30rem;
+  border: solid 3px black;
+  border-radius: 0 0 8px 8px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.close_button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 3.5rem;
+
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0;
+  background-color: white;
+  border: 0.2rem solid black;
+}
+
+.close_button:hover {
+  box-shadow: 0.2rem 0.2rem black;
+  transform: translate(-53%, -53%);
+}
+
+.close_button:active {
+  box-shadow: none;
+  transform: translate(-50%, -50%);
+  background-color: #faeed9;
+}
+
+.notification {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.gift {
+  width: auto;
+  height: 12rem;
+  margin-bottom: 1rem;
+}
+
+.window_buttons {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+/* FOLDERS WINDOW SET-UP */
+
+.Bday_party {
+  width: 50rem;
+
+  top: 40vh;
+  left: 30vw;
+}
+
+.Bday_party .window_upper_line {
+  height: 5rem;
+}
+
+.folders {
+  width: 100%;
+  height: 25rem;
+  border: solid 3px black;
+  border-radius: 0 0 8px 8px;
+  background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 4rem;
+  align-items: center;
+}
+
+.folder {
+  width: 10rem;
+  height: auto;
+}
+
+/* DEFINITION WINDOW SET-UP */
+
+.definition {
+  width: 35rem;
+
+  top: 75vh;
+  left: 80vw;
+}
+
+.Bday_party .window_upper_line {
+  height: 5rem;
+}
+
+.definition_text {
+  width: 35rem;
+  height: auto;
+
+  border: solid 3px black;
+  border-radius: 0 0 8px 8px;
+  background-color: white;
+}
+
+.definition_text > p {
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+/* DRAG SET-UP */
+
+#draggable {
+  cursor: grab;
+}
+
+#draggable:active {
+  cursor: grabbing;
+}
+
+/* NAVIGATION SET-UP */
+
+.navigation {
+  background-color: #faeed9;
+  border-bottom: 2px solid black;
+
+  height: 6rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#back {
+  padding-left: 8rem;
+}
+
+#emotion {
+  padding-right: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.2s;
+}
+
+#emotion:active {
+  transform: scale(1.02);
+}
+
+#arrow {
+  transition: 0.1s;
+  transform: scale(0);
+}
+
+#emotion:hover #arrow {
+  transform: scale(1);
+}
+
+.icon {
+  width: 3rem;
+  height: auto;
+  color: rgb(0, 0, 0);
+
+  transition: 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE DESGIN SET-UP */
+
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 58%;
+  }
+
+  #back {
+    padding-left: 6rem;
+  }
+
+  #emotion {
+    padding-right: 6rem;
+  }
+
+  #arrow {
+    transform: scale(1);
+  }
+
+  .Bday_party {
+    width: 40rem;
+
+    top: 30vh;
+    left: 30vw;
+  }
+
+  .Bday_party .window_upper_line {
+    height: 7rem;
+  }
+
+  .definition {
+    top: 80vh;
+    left: 65vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+
+  #back {
+    padding-left: 4rem;
+  }
+
+  #emotion {
+    padding-right: 4rem;
+  }
+
+  .container {
+    width: 45rem;
+    top: 50vh;
+    left: 50%;
+  }
+
+  .Bday_party {
+    width: 40rem;
+    top: 30vh;
+    left: 40vw;
+  }
+
+  .definition {
+    width: 35rem;
+    top: 85vh;
+    left: 63vw;
+  }
+}

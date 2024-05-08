@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
+    <link rel="stylesheet" href="Surprise/style.css" />
+    <script defer src="Surprise/script.js"></script>
+    <title>Surprise</title>
+  </head>
+
+  <body>
+    <div class="container Bday_party">
+      <div class="window_upper_line">
+        <a class="close_button" href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="cross"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </a>
+        <h2 class="notification">Bday party ideas</h2>
+      </div>
+      <div class="folders">
+        <img class="folder" src="Surprise/Images/folder.svg" />
+        <img class="folder" src="Surprise/Images/folder.svg" />
+        <img class="folder" src="Surprise/Images/folder.svg" />
+        <img class="folder" src="Surprise/Images/folder.svg" />
+        <img class="folder" src="Surprise/Images/folder.svg" />
+      </div>
+    </div>
+
+    <div class="container definition">
+      <div class="window_upper_line">
+        <a class="close_button" href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="cross"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </a>
+        <h2 class="notification">Surprise</h2>
+      </div>
+      <div class="definition_text">
+        <p>
+          One of the seven universal emotions and arises when we encounter
+          sudden and unexpected sounds or movements.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="draggable">
+      <div class="window_upper_line">
+        <a class="close_button" href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="cross"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </a>
+        <h2 class="notification">Notification</h2>
+      </div>
+      <div class="window_box">
+        <p id="message">You recieved 1 anonymous<br />SURPRISE!!!</p>
+        <img class="gift" id="gift" src="Surprise/Images/gift.svg" />
+        <div class="window_buttons">
+          <button class="open_button" onclick="after()">open</button>
+          <button class="dismiss_button" onclick="before()">dismiss</button>
+          <script src="Surprise/script.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div id="back">
+        <a href="index.html" class="home_hage">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+            id="home"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </a>
+      </div>
+      <div id="emotion">
+        <a href="sadness.html" class="next_emotion">explore next emotion</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+          id="arrow"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Agner/style.css" />
+    <title>Anger</title>
+  </head>
+
+  <body>
+<!-- NAVIGATION -->
+
+<div class="navigation">
+  <div id="back">
+    <a href="index.html" class="home_hage">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon"
+        id="home"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+        />
+      </svg>
+    </a>
+  </div>
+  <div id="emotion">
+    <a href="disgust.html" class="next_emotion">explore next emotion</a>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="icon"
+      id="arrow"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+      />
+    </svg>
+  </div>
+</div>
+
+<!-- MAIN CONTAINER -->
+
+    <div class="alignment_container">
+      <div class="alignment_title">
+        <div class="title_container">
+          <h1 class="title1">anger</h1>
+          <h1 class="title2">anger</h1>
+          <h1 class="title3">anger</h1>
+          <h1 class="title4">anger</h1>
+        </div>
+      </div>
+
+      <img class="checkboard_right" src="Agner/images/checkboardright.svg" />
+      <img class="checkboard_left" src="Agner/images/checkboard_left.svg" />
+      <img class="person" id="person" src="Agner/images/image_placeholder.png" />
+
+
+
+      <div class="text_block">
+        <div class="rotated">
+          <h2>anger</h2>
+          <div class="rectangle"></div>
+          <p>an emotion characterized by antagonism toward someone or something you feel has deliberately done you <span>wrong</span></p>
+        </div>
+        <div class="links">
+          <button class="right" onclick="play()">passive aggression</button>
+          <button class="right" onclick="play()">hostility</button>
+          <button class="left" onclick="play()">violence</button>
+          <button class="left" onclick="play()">manipulation</button>
+          <button class="right" onclick="play()">frustration</button>
+
+          <audio id="audio">
+            <source src="Agner/Audio/Bleep.mp3" type="audio/mp3" />
+          </audio>
+          <script src="Agner/script.js"></script>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
